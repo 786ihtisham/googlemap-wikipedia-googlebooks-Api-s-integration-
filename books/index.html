@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-------------------------------- Links for fonts ----------------------------------------->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-------------------------------- Resource style -------------------------------------------->
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/index.css"> 
+	
+	<!------------------------------- title ------------------------------------------------------>
+	<title>EBOOKS</title>
+</head>
+<!-------------------------------- Body start ----------------------------------------------------->
+<body>	
+	
+	<!------------------------------ Top Navigation ----------------------------------------------->
+	
+	<ul class="topnav">
+	  <li>
+		<button type="button" id="trigger" onclick="showNavigation();">
+			<i class="material-icons" style="font-size:26px">menu</i>
+		</button>
+		 <button type="button" id="close" onclick="hideNavigation();">
+			<i class="material-icons" style="font-size:26px">close</i>
+		</button>
+	  </li>
+	  <li class="nav-heading"><a  class="active" href="index.html">LOGO</a></li>
+	  <li class="f-right">
+		<ul id="navBar">
+		  
+		  <li class="right"><a  href="about.html">About Us</a></li>
+		  <li class="right"><a href="contact.html">Contact Us</a></li>
+		  <li class="right"><a href="search.html">Search Books</a></li>
+		  <li class="right"><a class="active2" href="index.html">Welcome</a></li>
+	 
+		</ul>
+	  </li>
+	</ul>
+
+	<!------------------------------ Section For welcome  ----------------------------------------->
+	<section id="section1">
+		<h1 class="lg-font"> WELCOME TO OUR SITE</h1>
+		<hr class="divider">
+		<br>
+		<button type="button" class="button1" onclick = "window.location.href='about.html'"> READ MORE </button>
+	</section>
+	
+	<!---------------------------------Section For BooksFormats ------------------------------->
+	<section id="section2">
+		<div class="containerr">
+			<h1 class="lg-font2">Formats</h1>
+		<div class="row">
+			<div class="col-3 mobile-col-3">
+				<a href="search.html" class="aa">
+					<img src="images/1.jpg" alt=" Photo Books" class="responsive" />
+					<br>
+					<h2 class="formatHeading">Photo Books</h2>
+					<p>Stunning photo books for creative <br> expressions of all kinds </p>
+				</a>
+			</div>
+			<div class="col-3 mobile-col-3">
+				<a href="search.html" class="aa">
+					<img src="images/2.jpg" alt=" Trade Books " class="responsive" />
+					<br><br><br>
+					<h2>Trade Books</h2>
+					<p>Affordable paperbacks and <br> hardbacks are ideal for distribution </p>
+				</a>
+			</div>
+			<div class="col-3 mobile-col-3">
+				<a href="search.html" class="aa">
+					<img src="images/3.jpg" alt=" Trade Books " class="responsive" />
+					<br><br><br>
+					<h2>IT Books</h2>
+					<p>Affordable paperbacks and <br> hardbacks are ideal for distribution </p>
+				</a>
+			</div>
+			<div class="col-3 mobile-col-3">
+				<a href="search.html" class="aa">
+					<img src="images/4.jpg" alt=" Trade Books " class="responsive" />
+					<br><br><br>
+					<h2>Science Books</h2>
+					<p>Affordable paperbacks and <br> hardbacks are ideal for distribution </p>
+				</a>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<!--------------------------------- Footer ---------------------------------------------------->
+	<div class="footer">
+		<span style="padding-right:6px"> © 2017 - 2018  </span>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+	</div>
+	<!---------------------------------------------------------------------------------------------->
+	<!--------------------------------- Custom Script ----------------------------------------->
+<script src="./js/myscript.js"></script>
+	</body>
+</html>

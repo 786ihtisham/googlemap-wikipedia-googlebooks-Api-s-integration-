@@ -1,0 +1,24 @@
+/*  ----------------------------- setting background to body -------------------------------*/
+body {
+		background : url("../images/5.jpg");
+		background-position : right top;
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+}
+/* ------------------------------  Formating the heading ------------------------------------------*/
+.formatHeading{
+	margin-top : 5px;
+}
+.lg-font{
+	color : #f3eeeebf;
+}
+.divider{
+	border : 2px solid white;
+}
+.containerr{
+	padding : 20px;
+	background-color : #ffffff94;
+	border : 2px solid grey;
+	box-shadow : 0 0 16px 0px grey;
+}

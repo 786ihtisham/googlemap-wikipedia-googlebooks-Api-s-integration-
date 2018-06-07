@@ -1,0 +1,448 @@
+body {margin: 0;}
+* {
+    box-sizing: border-box;
+}
+/*------------------------------ Making columsn of different width -------------------------------*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%; }
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*------------------------------- Font Family----------------------------------------------------*/
+html { font-family: "Lucida Sans", sans-serif; 	}
+/* ------------------------------- Row ----------------------------------------------------------*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ------------------------------- For responsive Image -----------------------------------------*/
+.responsive {
+	padding : 10px;
+	margin-bottom : 30px;
+	position: relative;
+    float: left;
+    width:  280px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+	
+}
+/*------------------------------- For Aligning The Text at Center -------------------------------*/
+.center-align{
+	text-align:center;
+}
+/* -------------------------------Styling and hiding  Result div for grid of books ---------------*/
+#result{
+	padding : 5px;
+	border : 3px solid lightgrey;
+	border-radius : 15px;
+	margin : 25px;
+	display:none;
+}
+/* ------------------------------- styling buttons -----------------------------------------------*/
+.bookButton{
+	padding : 7px;
+	font-size : 15px;
+	position : relative;
+	top : 25px;
+	left : 35px;
+	border : 2px solid grey;
+	color : grey;
+	cursor : pointer;
+}
+#btnn{
+	padding : 7px;
+	font-size : 15px;
+	border : 2px solid grey;
+	color : grey;
+	cursor : pointer;
+}
+.bookButton:hover {
+    
+    border: 2px solid black;
+    background: white;
+    color: black;
+    border-radius: 6px;
+}
+/* -------------------------------For making responsive image ----------------------------------*/
+.responsive1 {
+	position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+	box-shadow : 0 7px 9px 0px grey;
+}
+.responsive1:hover{
+	opacity : 0.5;
+	border  : 2px solid grey;
+	
+}
+/* ------------------------------- anchor styling ------------------------------------------------*/
+.aa {
+	text-decoration:none;color:black;
+	box-shadow : 0 0 15px 0px grey;
+
+	
+}
+.aa:hover {
+	color : grey;
+}
+.responsive:hover {
+	box-shadow : 0 0 15px 0px grey;
+	color : black;
+	
+}
+/* ------------------------------- making all columns at float left plus giving them padding -----*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* ------------------------------- For large fonts ----------------------------------------------*/
+.lg-font2{
+	font-size : 35px;
+	padding-left : 10px;
+	letter-spacing : 2px;
+}
+/*------------------------------- Styling Top navigation -------------------------------*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #ffffff99;
+	box-shadow : 0 0 7px 0px lightgrey;
+	
+}
+#navBar{
+	list-style-type : none;
+}
+.f-right{
+	float : right !important;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	letter-spacing : 2px;
+	font-size:15px;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: white ;color:black;
+	border:1px solid black;text-align:center;
+	border-radius : 15px;
+}
+
+ul.topnav li a.active {
+	background-color: #ffffff9e;color:black;
+	letter-spacing:14px;font-size:25px;
+	border-radius : 40px;
+	
+}
+ul.topnav li a.active2 {
+	background-color: lightgrey;color:grey;
+	letter-spacing:1px;font-size:15px;
+	border-radius : 20px;
+	border : 2px solid grey;
+}
+
+ul.topnav li.right {float: right;}
+/*---------------------- Using media quesries for responsiveness -------------------------------*/
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+	#trigger{
+		display : block !important;
+		background : transparent;
+		border : 2px solid grey;
+		margin-top : -10px;
+	}
+	#navBar{
+		display : none !important;
+	}
+	#close {
+		display : block !important;
+		margin-left : 90%;
+		margin-top : -50px;
+		background : transparent;
+		border : 2px solid grey;
+	}
+	.nav-heading{
+		margin-top : 10px;
+	}
+	.f-right {
+		float : none !important;
+		margin-top : 5px;
+	}
+	.col-6.format-text{
+		width : 100% ;
+	}
+	.col-6.full-col{
+		width : 100% !important;
+	}
+	
+}
+#close {
+		display : none ;
+	}
+@media screen and (max-width: 1150px){
+	.mobile-col-3{
+		width : 100%;
+	}
+}
+/*---------------------It is mandatory to make parent elementt of 100% ---------------------------
+-----------------------height So we can change height of childs (in %) ---------------------------*/
+html,body{ height : 100%;}
+/*------------------- Styling the First section (welcome)-----------------------------------------*/
+#section1{
+	height:70%;
+	text-align:center;
+	padding-top : 100px;
+	font-size : 20px;
+	
+	background : url("../images/book1.jpg");
+	background-position : right top;
+	width : 100%;
+	background-size : cover;
+	color : #333333;
+	box-shadow : 0 0 7px 0px black;
+}
+/* --------------------- Styling section for the form of grid of books ---------------------------*/
+#section1ForSearch,#section1ForSearch2{
+	font-weight : 900;
+	height:100%;
+	text-align:center;
+	padding-top : 100px;
+	font-size : 20px;
+	background : url("book1.jpg");
+	background-position : right top;
+	width : 100%;
+	background-size : cover;
+	color : #f9f5f5c2;
+	box-shadow : 0 0 7px 0px black;
+}
+#section2{
+	padding : 20px;
+}
+.lg-font{
+	font-size:40px;
+	letter-spacing : 4px;
+}
+.button1{
+	font-weight : bold;
+	color : #ffffffd6;
+	padding : 10px;
+	font-size: 15px;
+	letter-spacing : 3px;
+	border-radius : 15px;
+	background : transparent;
+	border : 2px solid #ffffffd6;
+	    box-shadow: 0 0 9px black;
+	
+}
+.button1:hover{
+	background-color:black;
+	color : white;
+	cursor : pointer;
+	box-shadow : 0 0 10px 0px black;
+}
+/*-------------------- styling horizontal lines-------------------------------------------------*/
+.divider{
+	border-bottom : 2px solid black;
+	width : 11%;
+	background-color : black;
+}
+.divider1{
+	border-bottom : 2px solid black;
+	width : 19%;
+	background-color : grey;
+	position:relative;top : 30px;
+	
+    left: -8%;
+}
+/*-------------------styling footer -------------------------------------------------------------*/
+.footer {
+	background-color : lightgrey;
+	width : 100%;
+	text-align:center;
+	padding : 10px;
+	box-shadow : 0 0 12px 0px black;
+}
+
+/* ------------------- social icons -------------------------------------------------------------*/
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+/* ---------------------- Setting the height and width of map ---------------------------------*/
+#map {
+	height : 50%;
+	width : 100%;
+}
+/*--------------------------Styling input feilds ----------------------------------------------*/
+.input1{
+	width : 20%;
+	height : 20%;
+	background : transparent;
+	border : 2px solid #ffffffd6;
+	color : #ffffffab;
+	text-align:center;
+	font-size : 18px;
+	padding : 10px;
+	box-shadow: 0 0 14px black;
+}
+.input2{
+	width : 20%;
+	height : 10%;
+	background : transparent;
+	border : 2px solid black;
+	color : black;
+	text-align:center;
+	font-size : 18px;
+	padding : 10px;
+}
+/* -------------------------- A contianer of grey color -----------------------------------------*/
+.container{
+	background-color : grey;
+}
+#trigger{
+	margin-bottom : 12px;
+	display:none;
+}
+
+
+/* --------------------------- styling  the article div where summary will append ----------------*/
+#article{
+	letter-spacing : 1px;
+	line-height : 25px;
+	font-size : 17px;
+	padding : 20px;
+	border : 2px solid grey;
+	box-shadow: 0 0 10px 0px #969191;
+	margin : 20px;
+	background-color : #fffefebd;
+}
+/* --------------------------- styling input feild -----------------------------------------------*/
+.winput1{
+	font-weight : bold;
+	color : #ffffffd6;
+	padding : 10px;
+	font-size: 15px;
+	letter-spacing : 3px;
+	border-radius : 5px;
+	background : transparent;
+	border : 2px solid #ffffffd6;
+	box-shadow: 0 0 9px black;
+	width : 15% !important;
+}
+/* --------------------------- styling and aligning the form -------------------------------------*/
+.wform{
+	text-align : center;
+	width : 50%;
+	margin : auto ;
+	padding : 10px;	
+}
+/* ------------------- setting background  to the form section and styling section --------------*/
+#wformSection{
+	height:80%;
+	padding-top : 100px;
+	font-size : 20px;
+
+	background : url("book1.jpg");
+	background-position : right top;
+	width : 100%;
+	background-size : cover;
+	color : #ffffffc2;
+	box-shadow : 0 0 7px 0px black;
+}
+/* --------------------------- styling btn -------------------------------------------------------*/
+.wbutton1{
+	padding : 10px;
+	font-size: 15px;
+	letter-spacing : 3px;
+	border-radius : 15px;
+	background : transparent;
+	border : 2px solid #efe9e9;
+	
+}
+/*---- styling error div which will show if their is not summary of that particular query -------*/
+#error{
+	padding : 20px;
+	text-align : center;
+	color : tomato;
+	border : 2px solid grey;
+	font-size : 20px;
+	margin : auto;
+	width : 50%;
+	box-shadow : 0 0 7px 0 grey;
+	background-color : #fffefebd;
+}
+#article {
+	
+}
+.wdivider {
+	border : 1px solid #f5f3f3b8;
+}
+.p-right{
+	padding-right:6px;
+}
+/* ----------------------------------------------------------------------------------------------*/

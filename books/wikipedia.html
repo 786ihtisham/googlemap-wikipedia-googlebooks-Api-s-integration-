@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!----------------------------------- Resource style ----------------------------------------->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/wikipedia.css">
+
+	<!--------------------------------- Title ---------------------------------------------------->
+	<title>EBOOKS</title>
+</head>
+
+<!-------------------------------- Starting Body -------------------------------------------------->
+<body>	
+
+	<!----------------------------- top Navigation ------------------------------------------------>
+	<ul class="topnav">
+	  <li>
+		<button type="button" id="trigger" onclick="showNavigation();">
+			<i class="material-icons" style="font-size:26px">menu</i>
+		</button>
+		 <button type="button" id="close" onclick="hideNavigation();">
+			<i class="material-icons" style="font-size:26px">close</i>
+		</button>
+	  </li>
+	  <li class="nav-heading"><a  class="active" href="index.html">LOGO</a></li>
+	  <li class="f-right">
+		<ul id="navBar">
+		  
+		  <li class="right"><a href="about.html">About Us</a></li>
+		  <li class="right"><a href="contact.html">Contact Us</a></li>
+		  <li class="right"><a href="search.html">Search Books</a></li>
+		  <li class="right"><a  href="index.html">Welcome</a></li>
+	 
+		</ul>
+	  </li>
+	</ul>
+	
+	<!----------------------------- Form section ------------------------------------------------------>
+	<section id="wformSection">
+		<!-- Form Div -->
+		<div class="wform">
+			<h1> Enter your Query </h1><input type="text" value="C++" class="winput1" id="wikiId" placeholder="Enter anything" >
+			<hr class="wdivider"><button type="button" class="wbutton1" id="btnnn" onclick="">Submit  </button>
+		</div>
+	</section>
+	
+	<!----------------------------- Div for book summary ---------------------------------------------->
+	<div id="article" style="display:none">
+		<div id="innerDiv"></div>
+		
+	</div>
+	<br>
+	
+	<!----------------------------- Error div if page not found --------------------------------------->
+	<div id="error" style="display:none"></div>
+	<br>
+	
+<!--------------------------- We cannot use custom ajax or http request beacase ---------------------------
+ wikipedia is not supporting http request method ,Therefore we have used the $.ajax() from jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/wikipedia.js"></script>
+
+	<!---------------------------------------- Footer --------------------------------------------->
+	<div class="footer">
+		<span style="padding-right:6px"> © 2017 - 2018  </span>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+	</div>
+<script src="./js/myscript.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* --------------------------- setting the background for body -----------------------------------*/
+body {
+		background : url("../images/book1.jpg");
+		background-position : right top;
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+}
+/* --------------------------- styling  the article div where summary will append ----------------*/
+#article{
+	letter-spacing : 1px;
+	line-height : 25px;
+	font-size : 17px;
+	padding : 20px;
+	border : 2px solid grey;
+	box-shadow: 0 0 10px 0px #969191;
+	margin : 20px;
+}
+/* --------------------------- styling input feild -----------------------------------------------*/
+.winput1{
+	font-weight : bold;
+	color : #ffffffd6;
+	padding : 10px;
+	font-size: 15px;
+	letter-spacing : 3px;
+	border-radius : 5px;
+	background : transparent;
+	border : 2px solid #ffffffd6;
+	box-shadow: 0 0 9px black;
+	width : 35%;
+}
+/* --------------------------- styling and aligning the form -------------------------------------*/
+.wform{
+	text-align : center;
+	width : 50%;
+	margin : auto ;
+	padding : 10px;	
+}
+/* ------------------- setting background  to the form section and styling section --------------*/
+#wformSection{
+	height:80%;
+	padding-top : 100px;
+	font-size : 20px;
+	background : url("book1.jpg");
+	background-position : right top;
+	width : 100%;
+	background-size : cover;
+	color : #ffffffc2;
+	box-shadow : 0 0 7px 0px black;
+}
+/* --------------------------- styling btn -------------------------------------------------------*/
+.wbutton1{
+	padding : 10px;
+	font-size: 15px;
+	letter-spacing : 3px;
+	border-radius : 15px;
+	background : transparent;
+	border : 2px solid #efe9e9;
+	cursor : pointer !important;
+	color : white !important;
+}
+.wbutton1:hover{
+	font-size: 25px;
+	letter-spacing : 3px;
+	border-radius : 15px;
+	background : transparent;
+	border : 2px solid #efe9e9;
+	cursor : pointer !important;
+	color : white !important;
+}
+/*---- styling error div which will show if their is not summary of that particular query -------*/
+#error{
+	padding : 20px;
+	text-align : center;
+	color : tomato;
+	border : 2px solid grey;
+	font-size : 20px;
+	margin : auto;
+	width : 50%;
+	box-shadow : 0 0 7px 0 grey;
+	background-color : #fffefebd;
+}
+#article {
+	background-color : #fffefebd;
+}
+.wdivider {
+	border : 1px solid #f5f3f3b8;
+}

@@ -1,0 +1,32 @@
+/*  ----------------------------- setting background to body -------------------------------*/
+body {
+		background : url("../images/5.jpg");
+		background-position : right top;
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+}
+#section1ForSearch{
+	
+		background : url("../images/book1.jpg");
+		background-position : right top;
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+}
+/* ------------------------------- styling the div of particularBookPage ------------------- */
+#particularBookPage{
+	background-color:#f1f1f16b !important;
+	line-height : 25px;
+	letter-spacing : 1px;
+}
+/* ------------------------------- styling view bool and go back button ----------------------*/
+#goBack,#viewBook{
+	width : 30%;
+}
+/* ------------------------------- styling view book button -------------------------------*/
+#viewBook{
+	margin-top : 3px;
+	text-align : center;
+	text-decoration : none;
+}

@@ -1,0 +1,141 @@
+/* ------------- Always set the map height explicitly to define the size of the div ------------
+ ------------------------------ element that contains the map. ----------------------------------*/
+#map {     
+height: 80%;
+width: 95%;
+margin-top : 10px;
+margin-left : 2%;
+border  : 2px solid grey;
+box-shadow : 0 0 11px 0px grey;	
+border-radius : 1px;
+
+}
+/* ------------------------------ setting background for body ---------------------------------- */
+body {							
+	background : url("../images/5.jpg");
+	background-position : right top;
+	background-repeat : no-repeat;
+	background-attachment : fixed;
+	background-size : 100% 100%;
+}
+/* ------------------------------ Optional: Makes the sample page fill the window. -------------------- */
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+/* ------------------------------ Form styling for finding book store ---------------------------*/
+.container {
+border : 2px solid lightgrey;
+width : 50%;
+margin : auto;
+padding : 20px;
+box-shadow : 0 0 17px 0px grey;
+background-color : #fdfcfcba;
+}
+/*------------------------------ Styling Form feilds --------------------------------------------*/
+.input2{
+	width : 30%;
+	height : 35px;
+	background : transparent;
+	border : 2px solid grey;
+	color : black;
+	text-align:center;
+	font-size : 15px;
+	padding : 10px;
+	
+} 
+/* ---------- Giving margin  to the adress,lat and long feilds for proper alignment -------------*/
+#address{
+	margin-left : 2%;
+}
+#latitude{
+	margin-left : 3%;
+}
+#longitude{
+	margin-left : 1%;
+}
+/* ------------------------------ styling buttons -----------------------------------------------*/
+#btnn,#btnn1{
+	padding : 7px;
+	font-size : 15px;
+	border : 2px solid black;
+	color : black;
+	cursor : pointer;
+	background: white;
+	border-radius: 6px;
+	box-shadow : 0 3px 11px 0px grey;
+}
+#btnn:hover,#btnn1:hover {
+	border: 2px solid grey;
+	background-color : lightgrey;
+	
+	color: black;
+	
+}
+#btnn{
+	margin-left : 1%;
+}
+/* ------- Setting background and height and padding and box-shadow for form outerContainer ---- */
+.outerContainer{
+	padding : 10px;
+	background : url("5.jpg");
+	background-size : cover;
+	box-shadow : 0 0 7px 0px black;
+	height : 90%;
+}
+/*----------------------------- make a class which will be used for inline the elements--------- */
+.inline{ display  : inline;}
+/* ------------------------------Styling adresses list which will come from json---------------- */
+.AdressList{
+	width : 95%;
+	margin-left : 2%;
+	margin-top : 10px;
+	padding : 10px;
+	letter-spacing : 3px;
+	line-height : 30px;
+	font-size : 20px;
+	text-align :center;
+	box-shadow: inset 0 0 12px #a5a2a2;
+	
+}
+/* ------------------------------styling the text ----------------------------------------------*/
+.text-style{
+	box-shadow : 0 0 7px 0px grey;
+	text-align : center;
+	border : 2px solid grey;
+	padding : 10px;
+	
+	color : grey;
+	letter-spacing : 3px;
+	font-size : 18px;
+}
+/* ------------------------------ styling horizontal line --------------------------------------*/
+.divider2{
+	width : 50%;
+	margin-top : 15px;
+	box-shadow : 0 0 11px 1px lightgrey;
+	
+}
+/* ------------------------------ using media queries for responsiveness --------------------------*/
+@media screen and (max-width: 800px){
+	#btnn1{
+		margin-top : 15px;
+		width : 70%;
+		padding : 8px;
+	}
+	.input2{
+		width : 40%;
+	}
+	#address{
+		margin-left : 9%;
+	}
+	#latitude{
+		margin-left : 9%;
+	}
+}
+/* ------------------------------ styling horizontal line --------------------------------------*/
+.dividerrr{
+	border : 1px dashed grey;
+}
+

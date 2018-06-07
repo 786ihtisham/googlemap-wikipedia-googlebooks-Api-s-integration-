@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Nearest searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" type="text/css" href="css/mapPage.css"> <!-- Resource style -->
+  <!-------------------------------- Navigation bar ----------------------------------------------->
+  	<ul class="topnav">
+	  <li>
+		<button type="button" id="trigger" onclick="showNavigation();">
+			<i class="material-icons" style="font-size:26px">menu</i>
+		</button>
+		 <button type="button" id="close" onclick="hideNavigation();">
+			<i class="material-icons" style="font-size:26px">close</i>
+		</button>
+	  </li>
+	  <li class="nav-heading"><a  class="active" href="index.html">LOGO</a></li>
+	  <li class="f-right">
+		<ul id="navBar">
+		  
+		  <li class="right"><a  href="about.html">About Us</a></li>
+		  <li class="right"><a href="contact.html">Contact Us</a></li>
+		  <li class="right"><a href="search.html">Search Books</a></li>
+		  <li class="right"><a  href="index.html">Welcome</a></li>
+	 
+		</ul>
+	  </li>
+	</ul>
+	
+	<!-------------------------------- Making an outer container ---------------------------------->
+	<div class="outerContainer">
+		<div class="container">
+			<h1 class = "text-style"> Enter Your Address and Press the Button</h1>
+			Address : <input id="address" type="text" placeholder="Enter address here" class="input2" />
+			<button id="btnn1" onclick="hello()"  >Get LatLong</button>
+			<div>
+				<p>Latitude:
+					<input type="text" id="latitude" class="input2" readonly />
+				</p>
+				<p>Longitude:
+					<input type="text" id="longitude" class="input2" readonly />
+				</p>
+				<button id="btnn" onclick="initMap();showBookStoree() ">Get Nearest Book Stores</button>
+				<hr class="divider2">
+				<div id="closestPlace" style="display:none">
+					<h3 id="closestMarker"></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------- Google Map Div -------------------------------------------->
+    <div  id="map" style="display:none"></div>
+	
+	<!-------------------------------- For listing nearest places --------------------------------->
+	<div class="AdressList" id="placesList" style="display:none;">
+		    
+	</div>
+	<!-------------------------------- Link for accessing google map and nearest places ---------->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoYskZR1h8e6fNdiKqbUIW8fLyM5WMQ6o&libraries=places&callback=initMap" async defer></script>
+    
+	<!-------------------------------- Footer -------------------------------->
+	<div class="footer">
+		<span style="padding-right:6px"> © 2017 - 2018  </span>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+	</div>
+	<script src="./js/map.js"></script>
+	<script src="./js/myscript.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html>	

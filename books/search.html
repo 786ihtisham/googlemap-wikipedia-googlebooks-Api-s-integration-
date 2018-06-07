@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-------------- Resource style -------------------------------->
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/search.css"> 
+	
+	<!--------------- Title ---------------------------------------->
+	<title>EBOOKS</title>
+<style>
+</style>
+</head>
+<body>
+
+	<!--------------------------------- Top navigation Bar --------------------------------->
+	<ul class="topnav">
+	  <li>
+		<button type="button" id="trigger" onclick="showNavigation();">
+			<i class="material-icons" style="font-size:26px">menu</i>
+		</button>
+		 <button type="button" id="close" onclick="hideNavigation();">
+			<i class="material-icons" style="font-size:26px">close</i>
+		</button>
+	  </li>
+	  <li class="nav-heading"><a  class="active" href="index.html">LOGO</a></li>
+	  <li class="f-right">
+		<ul id="navBar">
+		  
+		  <li class="right"><a  href="about.html">About Us</a></li>
+		  <li class="right"><a href="contact.html">Contact Us</a></li>
+		  <li class="right"><a class="active2" href="search.html">Search Books</a></li>
+		  <li class="right"><a  href="index.html">Welcome</a></li>
+	 
+		</ul>
+	  </li>
+	</ul>
+	
+	<!--------------------------------- Section For Books form ----------------------------->
+	<section id="section1ForSearch">
+		<h1 class="lg-font">FIND YOUR BOOKS</h1>
+		<hr class="divider">
+		<br>
+		<form name="myform">
+			<input type="text" class="input1" id="books" name="books"  placeholder="Title,Author,etc">
+			<button type="button" class="button1" id="myInputButton" onclick="" > Search  Your Book</button>
+		</form>
+		
+		<h3>Do you want to search your  nearest book store ?</h3>
+		<hr class="divider">
+		<button type="button" class="button1" onclick="window.location.href='map.html'"> Search Book Store</button>
+		<h3>Search Summary </h3>
+		<hr class="divider">
+		<button type="button" class="button1" onclick="window.location.href='wikipedia.html'">Search</button>
+	</section>
+	
+	<!--------------------------------- A grid of books will appnend to this div ------------>
+	<div id="result" class="row"></div>
+	
+	<!--------------------------------- Div for Particular Book ------------------------------>
+	<div  class="row" id="particularBookPage" style="">
+		<div class="col-4" id="thumbnail"></div>
+		<div class="col-8">
+			<h1 id="title"></h1>
+			<h3 id="author"></h3>
+			<div id="publisher"></div>
+			<div id="publishedDate"></div>
+			<div id="description"></div>
+			<div id="industryIdentifiers"></div>
+			<div id="categories"></div>
+			<div id="averageRating"></div>
+			<div id="ratingsCount"></div>
+			<div id="maturityRating"></div>
+			<div id="language"></div>
+			<div id="pdfAvailabilty"></div>
+			<br>
+			<button type="button" class="button1" id="goBack" style="display:none;"> Go Back </button>
+			<a  class="button1" target="_blank" id="viewBook" style="display:none;"> View The Book</a>
+		</div>
+	</div>
+	
+	<!--------------------------------- Footer ----------------------------------------------->
+	<div class="footer">
+		<span style="padding-right:6px"> © 2017 - 2018  </span>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+	</div>
+	<!--------------------------------- Custom Script ----------------------------------------->
+<script src="./js/myscript.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html>
